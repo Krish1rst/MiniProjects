@@ -1,1 +1,1 @@
-# GraphQL-Repo
+# Mini-Projects-repo
