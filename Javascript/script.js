@@ -26,10 +26,23 @@
 // console.log(me());
 
 
-let user={
-    username:'krishna',
-}
-let func = function sayHi (){
-    console.log(`hello ${this.username}`);
-}
-setTimeout(func.bind(user),1000)
+// let user={
+//     username:'krishna',
+// }
+// let func = function sayHi (){
+//     console.log(`hello ${this.username}`);
+// }
+// setTimeout(func.bind(user),1000)
+
+// function wrapper
+let user = {
+    firstName: "John",
+    sayHi() {
+      console.log(`Hello, ${this.firstName}!`);
+    }
+  };
+  
+  setTimeout(function(){
+    user.sayHi()
+  },1000)
+ 
